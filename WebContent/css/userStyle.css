@@ -1,0 +1,110 @@
+.flex-container {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    text-align: center;
+    height:100vh;
+}
+
+.flex-container > * {
+    padding: 15px;
+    -webkit-flex: 1 100%;
+    flex: 1 100%;
+}
+
+.article {
+    height:85%;
+    width:85%;
+}
+
+header {background: SteelBlue;color:white; height:10%; width:100%;}
+footer {background: SteelBlue;color:white;height:5%;width:100%;}
+
+#hdr {
+	text-align:center;
+	margin:0% 10% 1% 10%;
+}
+
+
+.nav {
+	width: 10px;
+	background: LightBlue;
+	}
+
+.nav ul {
+    list-style-type: none;
+ padding: 0;
+}
+#GOBtn{ width: 10%;
+         height: 2%;
+         background-color: SteelBlue;
+         text-align:center;}
+ .w3-btn{width:80%;
+ } 
+ #frame {
+ scrolling:"yes";
+ }  
+.nav ul a {
+ text-decoration: none;
+}
+
+#search-form {
+	 width: 40%;
+    background-color: LightBlue;
+    color: white;
+    padding: 14px 20px;
+    margin: 0px 0;
+    border: none;
+    border-radius: 0px;
+    cursor: pointer;
+}
+
+@media all and (min-width: 768px) {
+    .nav {text-align:left;-webkit-flex: 1 auto;flex:1 auto;-webkit-order:1;order:1;}
+    .article {-webkit-flex:5 0px;flex:5 0px;-webkit-order:2;order:2;}
+    footer {-webkit-order:3;order:3;}
+}
+
+#searchbar {
+	
+}
+.upd-table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td{
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+th {
+	border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+    background-color : #CD853F;
+}
+#btn {
+	text-align:center;
+}
+#price {
+	text-align:center;
+}
+#quant {
+	text-align:center;
+}
+
+tr:nth-child(even) {
+    background-color: #ADFF2F;
+}
+#Odebtn{
+	border-radius : 30px;
+    background-color: steel blue;     }
+#srch{
+	width:50%;
+	height:10%;
+	border-radius: 25px;
+	border: solid deepskyblue;
+}

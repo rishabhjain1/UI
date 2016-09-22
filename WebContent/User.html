@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Admin</title>
+	<meta charset="UTF-8">	
+	<link rel="stylesheet" href="css/userStyle.css">
+	<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+</head>
+<style>
+.w3-btn{
+background-color: purple;
+border-radius : 10px;
+}
+</style>
+<body>
+
+<div class="flex-container">
+<header>
+  <h1 id="hdr"> Welcome to Shopping Spree</h1>
+</header>
+
+<div id ='search-form'>
+<form action="SearchServlet" method="GET" target ="myframe">
+<p align="center">
+<input type="search" name="search" id ="srch" placeholder = "Search" style = "color:deepskyblue ; font-size : 0.4in ; text-align:center;" /><br>
+<br><button class="w3-btn" id ="GOBtn">GO</button>
+</p>
+</form>
+</div>
+<nav class="nav">
+<ul>
+ <p><button class="w3-btn" onclick="document.getElementById('frame').src = '/Shopping/PurchaseServlet'" id ="OdeBtn">Order History</button></p>
+<p><button class="w3-btn" onclick="document.getElementById('frame').src = '/Shopping/CartServlet'" id = "CarBtn">Cart</button></p>
+</ul>
+<form action="LogOutServlet" method ="GET"><p><button class="w3-btn w3-pink"  id = "tranBtn">LogOut</button></p></form>
+
+</nav>
+
+<article class="article">
+  <iframe  name="myframe" height="100%" width="100%"  id ="frame" src="">
+  </iframe>
+</article>
+
+<footer>MSCI Training Project</footer>
+</div>
+
+</body>
+</html>

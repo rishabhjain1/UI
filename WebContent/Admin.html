@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Admin</title>
+	<meta charset="UTF-8">	
+	<link rel="stylesheet" href="css/adminStyle.css">
+	<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+</head>
+
+<body>
+
+<div class="flex-container">
+<header>
+  <h1 id="hdr"> Welcome to Admin</h1>
+</header>
+
+<nav class="nav">
+<ul>
+  <p><button class="w3-btn w3-red" onclick="document.getElementById('frame').src = 'Update.html'" id ="updBtn">UPDATE</button></p>
+<p><button class="w3-btn w3-pink" onclick="document.getElementById('frame').src = 'AddNew.html'" id = "adnBtn">ADD NEW</button></p>
+<p><button class="w3-btn w3-purple" onclick="document.getElementById('frame').src = 'Transactions.html'" id = "tranBtn">TRANSACTION</button></p>
+
+</ul>
+</nav>
+
+<article class="article">
+  <iframe height="100%" width="100%"  id ="frame" src="home.html">
+  </iframe>
+</article>
+
+<footer>MSCI Training Project</footer>
+</div>
+
+</body>
+</html>

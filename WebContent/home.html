@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Home</title>
+	<meta charset="UTF-8">	
+	<link rel="stylesheet" href="css/adminStyle.css">
+	<link rel="stylesheet" href="css/loginsignupStyle.css">
+	<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+</head>
+<style>
+#li
+{
+ background-color: purple;
+}
+label
+{
+color: Blue;
+}
+button{
+border-radius: 10px; 
+}
+.formsubmit
+{
+  background-color: SteelBlue;
+  border-radius : 10px;
+  color: white;
+  width: 10%;
+}
+
+</style>
+<body>
+
+<div class="flex-container">
+<header>
+  <h1 id="hdr"> Shopping Spree</h1>
+</header>
+
+<nav class="nav">
+<ul>
+  <p><button id = "li"class="w3-btn" onclick="document.getElementById('login-form').style = 'display:show';document.getElementById('signup-form').style = 'display:none'" 
+	  
+  id ="loginBtn">LOGIN</button></p>
+<p><button class="w3-btn w3-pink"  
+	  onclick="document.getElementById('signup-form').style = 'display:show';document.getElementById('login-form').style = 'display:none' "
+	  id = "signupBtn">SIGN UP</button></p>
+
+</ul>
+</nav>
+
+<article class="article">
+ 
+<div id ='login-form' style="display:none">
+<form action="LoginServlet" method="POST">
+<label for='userID' id="l1">USERNAME</label>
+<input type="text" name = "UserID" />
+<label for='password'>PASSWORD</label>
+<input type="password" name = "Password"/>
+<input class = 'formsubmit' type="submit" name = "Login" value= "Login"/>
+</form>
+</div> 
+ 
+<div id ='signup-form' style = "display:none">
+<form action="SignUpServlet" method="POST">
+<label for='name'>USERNAME</label>
+<input type="text" name = "name" />
+<label for='pass'>PASSWORD</label>
+<input type="password" id = "pass" name = "pass" />
+<input class = 'formsubmit' type = "submit" id = "submit" name ="register" value = "Register" />
+</form>
+</div> 
+ 
+</article>
+
+<footer>MSCI Training Project</footer>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+@CHARSET "UTF-8";
+
+#login-form {
+	background-color: lightgrey;
+    width: 80%;
+    height: 80%;
+    border: 25px solid SteelBlue;
+    padding: 25px;
+    margin: 25px;
+}
+
+#signup-form {
+	background-color: lightgrey;
+	width: 80%;
+    height: 80%;
+    border: 25px solid SteelBlue;
+    padding: 25px;
+    margin: 25px;
+}
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type=password], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+
